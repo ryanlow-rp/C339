@@ -10,18 +10,16 @@
 
 <body>
   <?php
-  $t = date("H");
-  if ($t < "20") {
+  if ($_POST["psw"] == "password") {
   ?>
-    echo "Have a good day!";
+    Welcome <span id="success"><?php echo $_POST["uname"]; ?></span><br>
   <?php
   } else {
-    echo "Have a good night!";
+  ?>
+    <span id="failure">Login was not successful</span>
+  <?php
   }
   ?>
-  Welcome <span id="username"><?php echo $_POST["uname"]; ?></span><br>
-  Welcome <span id="password"><?php echo $_POST["psw"]; ?></span><br>
-
 </body>
 
 </html>
