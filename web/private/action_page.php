@@ -10,7 +10,7 @@
 
 <body>
   <?php
-  if ($_POST["psw"] == "password") {
+  if ($_POST["psw"] == "secretpassword") {
   ?>
     Welcome <span id="result"><?php echo $_POST["uname"]; ?></span><br>
   <?php
