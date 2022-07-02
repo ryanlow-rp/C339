@@ -12,11 +12,11 @@
   <?php
   if ($_POST["psw"] == "password") {
   ?>
-    Welcome <span id="success"><?php echo $_POST["uname"]; ?></span><br>
+    Welcome <span id="result"><?php echo $_POST["uname"]; ?></span><br>
   <?php
   } else {
   ?>
-    <span id="failure">Login was not successful</span>
+    <span id="result">Login was not successful</span>
   <?php
   }
   ?>
