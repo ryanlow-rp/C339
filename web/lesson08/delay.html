@@ -6,15 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <script>
-      setTimeout(function () {
-        var initialised = false
-        window.addEventListener('load', function () {
-          var newElement = document.createElement('p')
-          newElement.textContent = 'Hello from JavaScript!'
+      var initialised = false
+      window.addEventListener('load', function () {
+        var newElement = document.createElement('p')
+        newElement.textContent = 'Hello from JavaScript!'
+        setTimeout(function () {
           document.body.appendChild(newElement)
           initialised = true
-        })
-      }, 1000)
+        }, 1000)
+      })
     </script>
   </head>
   <body></body>
