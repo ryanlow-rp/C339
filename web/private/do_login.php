@@ -12,11 +12,11 @@
   <?php
   if ($_POST["password"] == "defaultpassword") {
   ?>
-    Login for <span id="message"><?php echo $_POST["username"]; ?></span> succeeded! <br>
+    Login for <span class="message"><?php echo $_POST["username"]; ?></span> succeeded! <br>
   <?php
   } else {
   ?>
-    <span id="message">Login was not successful</span>
+    <span class="message">Login was not successful</span>
   <?php
   }
   ?>
